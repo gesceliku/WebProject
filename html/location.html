@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - Dental Clinic</title>
+    <link rel="icon" href="/PHOTO/tt2.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/CSS/general.css" rel="stylesheet"> 
+    
+</head>
+<style>
+         
+         #locationSection {
+            display: flex;
+            margin-top: 90px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .map-container {
+            width: 80%; 
+            max-width: 800px; 
+            height: 450px; 
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+</style>
+<body>
+    <header class="header">
+        <a href="/HTML/dentalclinic-index.html">Dental Clinic</a>
+    </header>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light">
+       
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="dentalclinic-index.html"><img src="/PHOTO/Dental_Clinic-removebg-preview.png" height="100px" width="150px"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Reservation.html" style="text-decoration: none;">Reservations</a>
+                                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./location.html" style="text-decoration: none;">Location</a> 
+                 </li>             
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html" style="text-decoration: none;">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html" style="text-decoration: none;">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+
+    <main>
+        <section id="locationSection">
+            <h2>Our Location</h2>
+            <p>Find us at the following location:</p>
+           <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=\
+        !1m18!1m12!1m3!1d2930.9688989317986!2d19.815549743575325!3d41.3203717421996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s41.328752122927064%2C%2019.834655698295368!3e0" 
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+        </section>
+    </main>
+
+</body>

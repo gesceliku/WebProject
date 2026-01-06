@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic</title>
+    <link rel="icon" href="/PHOTO/tt2.png" type="image/x-icon">
+    <link href="/CSS/index.css" rel="stylesheet">
+    <img src="/PHOTO/cahir.png"hidden>
+</head>
+<body>
+    <nav class="navbar">
+        <li class="nav-item">
+            <a href="dentalclinic-index.html"><img src="/PHOTO/arrow.png" height="100px" width="100px"></a>
+        </li>
+    </nav>
+    <div class="container">
+        <h1>Dental Clinic Sign-In</h1>
+        <form id="signInForm">
+            <div class="form-group">
+                
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <select id="position-select" class="form-control" required>
+                <option selected disabled>Position</option>
+                <option value="ADMIN">Admin</option>
+                <option value="DOCTOR">Doctor</option>
+                <option value="CLIENT">Client</option>
+
+            </select>
+            <button type="submit">Sign In</button>
+            <p class="error-message" id="error-message"></p>
+        </form>
+        <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+    </div>
+    <script src = "/JS/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic</title>
+    <link rel="icon" href="/PHOTO/tt2.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/CSS/general.css" rel="stylesheet">
+    <link href="/CSS/admin-page.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="dentalclinic-index.html"><img src="/PHOTO/Dental_Clinic-removebg-preview.png" height="100px" width="150px"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Reservation.html">Reservations</a>
+                                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./location.html">Location</a> 
+                 </li>             
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  
+    <h1 id="h1">Add a Doctor</h1>
+      
+    <form id="doctorForm" class="mt-4" onsubmit="">
+        <div class="mb-3">
+          <label for="doctorName" class="form-label">Doctor Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="doctorName"
+            name="doctorName"
+            required
+          />
+        </div>
+        <label for="doctorUsername">Doctor Username</label>
+        <input type="text" id="doctorUsername" />
+        <label for="doctorPass">Password</label>
+        <input type="password" id="doctorPass"/>
+        <select id="clinicSelect" class="form-control" required>
+            <option selected disabled>Select Location</option>
+            <option value="DentalClinic 1 (Komuna e Parisit)">DentalClinic 1 (Komuna e Parisit)</option>
+            <option value="DentalClinic 2 (Kombinat)">DentalClinic 2 (Kombinat)</option>
+        </select>   
+        <button type="submit" class="btn btn-primary" id="addBtn">
+          Add Doctor
+        </button>
+        <button type="button" class="btn btn-secondary d-none" id="updateBtn">
+          Update Doctor
+        </button>
+      </form>
+    <div class="container">
+            <h3>Doctors List</h3>
+            <table class="table table-bordered mt-3">
+                <thead>
+                  <tr>
+                    <th>Doctor Username</th>
+                    <th>Doctor Name</th>
+                    <th>Doctor Clinic</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="doctorsList">
+                  
+                </tbody>
+              </table>
+          
+    </div>
+    <script src = "/JS/admin-page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
